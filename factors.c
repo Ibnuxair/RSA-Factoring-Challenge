@@ -55,13 +55,13 @@ int main(int argc, char **argv)
 	start_time = clock();
 	if (argc != 2)
 	{
-		printf("Usage: factors file");
+		printf("Usage: factors file\n");
 		return (1);
 	}
 	fd = fopen(argv[1], "r");
 	if (!fd)
 	{
-		printf("Can't open the %s", argv[1]);
+		printf("Can't open the %s\n", argv[1]);
 		return (1);
 	}
 
